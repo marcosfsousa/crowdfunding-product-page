@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root {
+    /*Colors*/
+        
+        /*Primary*/
+        --moderate-cyan: hsl(176,50%,47%);
+        --dark-cyan: hsl(176,72%,28%);
+        
+        /*Neutral*/
+        --black: hsl(0,0%,0%);
+        --dark-gray: hsl(0,0%, 48%);
+
+    /*Typography*/
+
+        /*Body Copy*/
+        --body-copy: 16px;    
+}
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--body-copy);
+    font-family: 'Commissioner', sans-serif;
+    position: absolute;    
+}
+
+.hero-box {
+    background-image: url(images/image-hero-mobile.jpg);    
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position-y: -0.5em;
+    height: 300px;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 25px;
+}
+
+.img-hamburger {
+    height: 1em;
+    width: 1.1em;
+}
+
+.img-logo {
+    height: 1.3em;    
+}
+
+.title-card {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 0px 25px;
+    padding: 10px 10px;
+    position: relative;
+    top: -3.95em;    
+    background-color: white;        
+    -webkit-box-shadow: 3px 3px 17.5px 1px #eeeeee;
+    -moz-box-shadow: 3px 3px 17.5px 1px #eeeeee;
+    box-shadow: 3px 3px 17.5px 1px #eeeeee;
+}
+
+.img-mastercraft {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -2em;
+    left: 8.2em;
+}
+
+.title {
+    font-family: inherit;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 40px 35px 10px;
+    text-align: center;
+}
+
+.sub-title {
+    font-family: inherit;
+    font-size: 0.9em;
+    opacity: 0.7;
+    line-height: 1.5em;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#btn-select {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    background-color: var(--moderate-cyan);
+    border-radius: 50px;
+    border: 1px solid;
+    padding: 1.25em 3em;
+    margin: 5px 0px 30px 10px;
+}
+
+#btn-bookmark {
+    background-image: url(images/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    padding: 22.5px 10px;
+    margin: 0px 5px;    
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+
+.numbers-card {
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 0px 25px;
+    padding: 30px 25px;
+    min-height: 400px;
+    background-color: white;        
+    -webkit-box-shadow: 3px 3px 17.5px 1px #eeeeee;
+    -moz-box-shadow: 3px 3px 17.5px 1px #eeeeee;
+    box-shadow: 3px 3px 17.5px 1px #eeeeee;
+
+}
+
+.numbers-card > p {
+    padding: 15px 0px 5px;
+    font-family: inherit;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.numbers-card > span {
+    padding: 0px 0px 5px;
+    color: var(--dark-gray);
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.line-break {
+    border: 1px solid var(--dark-gray);
+    width: 5em;
+    opacity: 0.3;
+    margin-top: 1.25em;
+}
+
+.background-progress {
+    background-color: rgba(0,0,0,0.1);
+    width: 17.5em;
+    border: none;
+    height: 12px;
+    margin-top: 1.55em;
+    border-radius: 15px;
+    position: relative;
+    bottom: 0;
+    
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    color: var(--moderate-cyan);
+    width: 13.5em;
+    border: 6px solid ;
+    border-radius: 15px;
+}
+
+.pledge-box {
+    margin: 30px 25px;
+    padding: 30px 25px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 17.5px 1px #eeeeee;
+    -moz-box-shadow: 3px 3px 17.5px 1px #eeeeee;
+    box-shadow: 3px 3px 17.5px 1px #eeeeee;
+}
+
+.pledge-box-heading {
+    font-family: inherit;
+    font-size: 1.25em;
+    margin: 5px 0px 25px;
+}
+
+.pledge-box-para {
+    font-family: inherit;
+    font-size: 0.975em;
+    font-weight: 300;
+    opacity: 0.7;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.pledge-card {
+    padding: 20px 15px 0px 20px;    
+    border: 1.5px solid rgba(0,0,0,0.1);
+    min-height: 385px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+aside:nth-child(6) {
+     opacity: 0.6;          
+}
+
+aside:nth-child(6) > button {
+     background-color: var(--dark-gray);
+}
+
+.pledge-card-heading {
+    font-family: inherit;
+    font-size: 1.095em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pledge-card-subheading {
+    color: var(--moderate-cyan);
+    font-size: 0.925em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pledge-card-description {
+    font-family: inherit;
+    font-size: 0.925em;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 25px;
+    opacity: 0.6;
+}
+
+.light-text {
+    opacity: 0.6;
+    display: inline-block;  
+    margin-left: 0.95em; 
+    padding-bottom: 0.75em;
+}
+
+.pledge-card-clients {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.btn-pledge-confirm {
+    display: block;
+    color: white;
+    font-size: 0.875em;
+    font-weight: 700;    
+    background-color: var(--moderate-cyan);
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 1.25em 2.325em;
+}
